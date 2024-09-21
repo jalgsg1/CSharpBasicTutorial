@@ -1,0 +1,20 @@
+
+// crear un projecto y agregar controladores 
+// por defecto.
+
+dotnet new webapi -controllers -f net8.0
+
+
+// instalar certificado temporal para https
+// No instalar esto en VMs o imágenes.
+// Solo para pruebas locales y probar apis en chrome y firefox.
+
+
+dotnet dev-certs https --trust
+
+dotnet dev-certs https -ep https.pfx -p somePassword --trust
+
+dotnet dev-certs https --clean --import https.pfx --password somePassword
+
+// Auto generated swagger link
+http://localhost:5221/swagger/index.html

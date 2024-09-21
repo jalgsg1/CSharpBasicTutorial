@@ -1,0 +1,32 @@
+int first = 7;
+int second = 5; // if decimal, result in decimal.
+
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient); // 1.4
+
+// carefull
+decimal quotient2 = first / second;
+Console.WriteLine(quotient2); // 1
+
+	Operators
+
+// --, ++
+// +, -, /, *, +=, -=, /=, *=
+
+int value = 1;
+Console.WriteLine("First: " + value); // 1
+Console.WriteLine($"Second: {value++}"); // 1
+Console.WriteLine($"Third: {value}"); // 2
+// The interpolation ocures after the operation ++
+// This can change if use the ++ first. {++value} 
+Console.WriteLine($"Fourth: {++value}"); // 3
+
+// C# !
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius.");
+
+int result = 3 + 1 * 5 / 2; // 5
+Console.WriteLine(5 / 10); // 0
+
+
